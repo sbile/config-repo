@@ -1,2 +1,16 @@
 server:
     port: 9098
+
+spring:
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/sbile/config-repo
+        stream:
+            binder:
+                kafka:
+                    brokers: 192.168.50.13:9090,192.168.50.13:9091,192.168.50.13:9092
+                    defaultBrokerPort: 9090
+                    zkNodes: 192.168.50.13
+                    defaultZkPort: 2181
