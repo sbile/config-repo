@@ -14,4 +14,4 @@ spring:
                     defaultBrokerPort: 9090
                     zkNodes: 192.168.50.13
                     defaultZkPort: 2181
-foo: bar
+foo: bar modified!
